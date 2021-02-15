@@ -1,0 +1,344 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprum.woff2) format("woff2"),
+    url(../fonts/cuprum.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprumbold.woff2) format("woff2"),
+    url(../fonts/cuprumbold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprumbolditalic.woff2) format("woff2"),
+    url(../fonts/cuprumbolditalic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;    
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprumitalic.woff2) format("woff2"),
+    url(../fonts/cuprumitalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
+}
+
+/* Variables */
+
+:root {
+    --basic-red: #EE3643;
+    --basic-extra-blue: #293449;
+    --basic-blue: #32425C;
+    --basic-white: #FFFFFF;
+    --basic-extra-light: #F3F7F9;
+    --basic-black: #000000;
+    --basic-light-yellow: #FFD180;
+    --basic-green: #63A63E;
+    --basic-yellow: #FFBF47;
+    --basic-skyblue: #3BBCE3;
+    --basic-light-purple: #DC91D8;
+    --basic-extra-green: #8ED78F;
+
+    --special-red: #BA2732;
+    --special-green: #5FBB2D;
+    --special-light-grey: #C5C5C5;
+    --special-grey: #A9A9A9;
+    --special-blue: #1D2739;
+    --special-dark-red: #CA2C37;
+    --special-dark-green: #518534;
+    --special-light: #F1F5F7;
+    --special-dark-grey: #B5B5B5;
+    --special-dark-blue: #212A3A;
+    --special-light-beige: #F9F5F0;
+    --extradark-blue: #161D29;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-white);
+    background-color: var(--basic-white);    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main header */
+
+.main-header {
+    background-color: var(--special-light);
+}
+
+/* header menu */
+
+.header-menu,
+.search,
+.header-menu a {
+    color: var(--basic-white);    
+}
+
+.header-menu,
+.search {
+    background-color: var(--basic-extra-blue);
+}
+
+.main-header-logo {
+    background-color: var(--basic-red);
+}
+
+.order-button {
+    background-color: var(--basic-green);
+}
+
+.order-button:hover {
+    background-color: var(--special-green);
+}
+
+.order-button:focus {
+    background-color: var(--basic-green);
+}
+
+.main-header-logo:focus {
+    background-color: var(--special-red);
+}
+
+.header-menu a:focus {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-button-wrap a:focus {
+    background-color: var(--extradark-blue);
+}
+
+.search:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+/* user menu */
+
+.logo-text,
+.header-phone {
+    color: var(--basic-red);
+}
+
+.logo-text {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.header-phone {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.header-address {
+    font-size: 14px;
+    color: var(--basic-blue);
+}
+
+.user-navigation a {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+    background-color: var(--basic-white)
+}
+
+.user-navigation a:hover {
+    color: var(--basic-red);
+}
+
+.user-navigation a:focus {
+    color: var(--special-light-grey);
+}
+
+
+/* site navigation */
+
+.site-navigation {
+    background-color: var(--basic-blue);    
+
+    list-style: none;
+}
+
+.site-navigation a {
+    color: var(--basic-white);
+}
+
+.site-navigation a:hover {
+    background-color: var(--basic-extra-blue);
+}
+
+.site-navigation a:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--extradark-blue);
+}
+
+/* promo block */
+
+.promo-item {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.promo-item:nth-of-type(1),
+.promo-item:nth-of-type(5) {
+    background-color: var(--basic-yellow);
+} 
+
+.promo-item:nth-of-type(2) {
+    background-color: var(--basic-skyblue);
+}
+
+.promo-item:nth-of-type(3) {
+    background-color: var(--basic-light-purple);
+}
+
+.promo-item:nth-of-type(4) {
+    background-color: var(--basic-extra-green);
+}
+
+.promo-btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--basic-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.promo-btn:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.promo-btn:focus {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
+.slider {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;    
+}
+
+.perforators {
+    background: #DEB887 url("../img/perforators.jpg") no-repeat;
+    width: 620px;
+    height: 266px;
+} 
+
+.drills {
+    background: #DEB887 url("../img/drills.jpg") no-repeat;
+    width: 620px;
+    height: 266px;
+}
+
+.slider p {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    font-style: normal;
+}
+
+/* кнопки красные */
+
+.button {
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-weight: normal;
+}
+
+.button:hover {
+    background-color: var(--special-dark-red);
+}
+
+.button:focus {
+    background-color: var(--special-red);
+}
+
+/* заголовки */
+
+.title {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.popular-manufacturers .title,
+.popular-items .title {
+    color: var(--basic-blue);
+}
+
+.popular-title-wrap {
+    background-color: var(--special-light-beige);
+}
+
+/* популярные товары */
+
+.catalog-item {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.catalog-item p {
+    color: var(--basic-black);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.catalog-item .old-price {
+    color: var(--special-grey);
+    text-decoration: line-through;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.catalog-item .new-price {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
