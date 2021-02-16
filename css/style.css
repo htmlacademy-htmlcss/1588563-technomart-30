@@ -183,19 +183,29 @@ img {
     color: var(--basic-blue);
 }
 
-.user-navigation a {
+.user-link {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
     background-color: var(--basic-white)
 }
 
-.user-navigation a:hover {
+.user-link a:hover {
     color: var(--basic-red);
 }
 
-.user-navigation a:focus {
+.user-link a:focus {
     color: var(--special-light-grey);
+}
+
+.cart.not-empty-cart {
+    background-color: var(--basic-red);
+}
+
+.user-navigation a:not(.user-link) {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-blue);
 }
 
 
@@ -393,6 +403,12 @@ img {
     color: var(--basic-black);
 }
 
+.inner-page {
+    color: var(--basic-black);
+    font-family: "PT Sans", Arial, sans-serif;
+    line-height: 18px;
+}
+
 /* футер */
 
 .footer-navigation-list a {
@@ -401,7 +417,7 @@ img {
 
 .footer-navigation-list a:hover,
 .footer-services-list a:hover,
-.footer-contacts a:not(.logo):hover {
+.footer-links a:hover {
     text-decoration: underline;
 }
 
@@ -409,8 +425,7 @@ img {
     color: rgba(241,245,247,0.5)
 }
 
-.footer-address,
-.footer-phone {
+.footer-address a {
     color: var(--basic-extra-light);
 }
 
@@ -430,10 +445,10 @@ img {
     color: inherit;
 }
 
-.footer-contacts a:not(.logo) {
+.footer-links a:not(.logo) {
     color: var(--basic-light-yellow)
 }
 
-.footer-contacts a:not(.logo):focus {
+.footer-links a:not(.logo):focus {
     color: var(--basic-red);
 }
