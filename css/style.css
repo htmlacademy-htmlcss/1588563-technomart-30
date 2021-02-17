@@ -63,6 +63,7 @@
     --basic-skyblue: #3BBCE3;
     --basic-light-purple: #DC91D8;
     --basic-extra-green: #8ED78F;
+    --basic-beige: #F7F3EC;
 
     --special-red: #BA2732;
     --special-green: #5FBB2D;
@@ -104,7 +105,9 @@ img {
 /* Main header */
 
 .main-header,
-.services {
+.services,
+.inner-page .title,
+.perforator-info {
     background-color: var(--special-light);
 }
 
@@ -330,11 +333,13 @@ img {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-blue);
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .services-title,
 .company-title,
-.contacts-title {
+.contacts-title,
+.perforator-info .title {
     color: var(--basic-black);
 }
 
@@ -372,9 +377,73 @@ img {
     text-transform: uppercase;
 }
 
+/* каталог */
+
+.catalog-list {
+    list-style: none;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    border: 1px solid #E5E5E5;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+    border: none;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.pagination-item a:hover {
+    border: 1px solid #C5C5C5;
+}
+
+.pagination-item a:focus {
+    border: 1px solid #EE3643;
+}
+
+.catalog-buttons,
+.catalog-buttons button {
+    font-family: "Cuprum", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.buy-button {
+    background-color: var(--basic-green);
+    color: var(--basic-white);
+}
+
+.bookmarks-button {
+    background-color: var(--basic-white);
+    color: var(--basic-blue);
+    border: 3px solid var(--basic-green);
+}
+
+.buy-button:hover {
+    background-color: var(--special-green);
+}
+
+.buy-button:focus {
+    background-color: var(--special-dark-green);
+}
+
+.bookmarks-button:hover {
+    border: 3px solid var(--basic-blue);
+}
+
 /* сервисы */
 
-.slogan {
+.slogan,
+.perforator-info-text {
     font-family: "PT Sans";
     font-size: 13px;
     color: var(--basic-black);
@@ -407,6 +476,63 @@ img {
     color: var(--basic-black);
     font-family: "PT Sans", Arial, sans-serif;
     line-height: 18px;
+}
+
+/* хлебные крошки */
+
+.breadcrumbs {
+    list-style: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    color: inherit;
+}
+
+/* фильтр */
+
+.filters,
+.filter-button,
+.pagination-item a {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.filters > p,
+.price-range input,
+.sort {
+    background-color: var(--basic-beige);
+}
+
+.sort .sort-type {
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort .sort-type:hover {
+    color: var(--basic-black);
+    opacity: 1;
+    border-bottom: 1px solid var(--basic-red);
+}
+
+.sort .sort-type:active {
+    color: var(--basic-red);
+    border: none;
+}
+
+.filter-title {    
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.manufacturers-filter,
+.power-filter {
+    list-style: none;
+    font-size: 15px;
+    line-height: 19px;
 }
 
 /* футер */
