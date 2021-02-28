@@ -122,30 +122,24 @@ img {
 }
 
 .header-menu {
-    display: grid;
-    width: 940px;    
-    height: 42px;
+    display: flex;
+    width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    grid-template-columns: 12fr;
+    justify-content: space-between;
 }
 
-.main-header-logo {
-    grid-column: 1/4;
-    width: 220px;
+/* .main-header-logo {
 }
 
 .search-form {
-    grid-column: 4/7;
 }
 
 .menu-button-wrap {
-    grid-column: 7/11;
 }
 
 .order-button {
-    grid-column: 11/13;
-}
+} */
 
 .header-navigation-bar {
     background-color: var(--special-light);
@@ -157,27 +151,24 @@ img {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    grid-template-columns: 12fr;
+    grid-template-columns: 2fr 2fr 1fr;
 }
 
-.logo-text {
-    grid-column: 1/5;
+/* .logo-text {
 }
 
 .header-contacts {
-    grid-column: 5/9;
 }
 
 .user-navigation {
-    grid-column: 9/13;
-}
+} */
 
 .site-navigation {
-    display: grid;
+    display: flex;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    grid-template-columns: 12fr;
+    justify-content: space-around;
 }
 
 .promo-list {
@@ -186,29 +177,25 @@ img {
     height: 409px;
     margin: 0 auto;
     padding: 0 10px;
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
     gap: 20px;
     margin-top: 60px;
 }
 
 .perforators {
-    grid-row: 2/4;
-    grid-column: 1/9;
+    grid-column: 1/2;
+    grid-row: 2/-1;
 }
 
 .promo-item:nth-of-type(5) {
-    grid-row: -2/-1;
     grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 .promo-item:nth-of-type(4) {
     grid-column: 3/4;
-    grid-row: 2/3; 
 }
-
-
-
 
 .services,
 .inner-page .title,
@@ -470,11 +457,11 @@ img {
 }
 
 .popular-items-list {
-    display: grid;
+    display: flex;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    grid-template-columns: 220px 220px 220px 220px;
+    align-items: baseline;
 }
 
 .popular-manufacturers-list {
@@ -492,7 +479,6 @@ img {
     font-weight: bold;
     text-align: center;
 }
-
 
 .catalog-item p {
     color: var(--basic-black);
@@ -517,6 +503,79 @@ img {
 }
 
 /* каталог */
+
+.inner-container {
+    display: grid;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    grid-template-rows: auto min-content min-content 1fr auto;
+    grid-template-columns: auto 1fr;
+}
+
+.breadcrumbs {
+    grid-column: 1/-1;
+
+    display: flex;
+    gap: 20px;
+}
+
+.perforators-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 940px;
+}
+
+.filter-header {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.filters {
+    margin-top: 40px;
+    grid-column: 1/2;
+    grid-template-rows: 4/5;
+}
+
+.sort {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: min-content;
+}
+
+.perforators-list {
+    margin: 0 auto;
+    padding: 0 10px;
+    grid-column: 2/-1;
+    grid-row: 4/5;
+    align-items: baseline;
+}
+
+.pagination-list {
+    grid-column: 2/-1;
+    grid-row: 5/6;
+    display: flex;
+}
+
+.pagination-item {
+    padding: 10px;
+}
+
+.perforator-info {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    margin-bottom: 60px;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.catalog-list {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+}
 
 .catalog-list {
     list-style: none;
@@ -585,15 +644,15 @@ img {
     padding-top: 60px;
 }
 
-.services-bar {
+.services-bar,
+.perforator-bar {
     background-color: var(--special-light);
 }
 
 .services-head {
     width: 940px;
     margin: 0 auto;
-    padding: 0 10px;
-    
+    padding: 0 10px;    
 }
 
 .services-menu {
@@ -602,6 +661,7 @@ img {
     margin: 0 auto;
     padding: 0 10px;
     grid-template-columns: min-content auto;
+    grid-template-rows: auto;
     margin-top: 60px;
 }
 
@@ -677,14 +737,15 @@ img {
 
 /* фильтр */
 
-.filters,
+.filter-header,
+.sort,
 .filter-button,
 .pagination-item a {
     text-transform: uppercase;
     font-size: 13px;
 }
 
-.filters > p,
+.filter-header,
 .price-range input,
 .sort {
     background-color: var(--basic-beige);
@@ -745,6 +806,28 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.footer-navigation {
+    display: grid;
+    grid-template-columns: 220px 1f;
+    grid-template-rows: 68px;
+    justify-content: space-between;
+}
+
+
+
+.main-footer-logo {
+    display: flex;
+    width: 220px;
+    height: 68px;
+    grid-row: 1/-1;
+}
+
+.footer-navigation-list {
+    display: flex;
+    grid-row: 1/-1;
+    gap: 20px;
+}
+
 
 .footer-navigation-list a {
     color: var(--special-light);
@@ -790,6 +873,11 @@ img {
 
 .hidden {
     visibility: hidden;
+}
+
+.guarantee.hidden,
+.credit.hidden {
+    display: none;
 }
 
 
