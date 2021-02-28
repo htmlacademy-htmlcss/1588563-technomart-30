@@ -2,48 +2,42 @@
 
 @font-face {
     font-family: "Cuprum";
-    src: url(../fonts/cuprum.woff2) format("woff2"),
-    url(../fonts/cuprum.woff) format("woff");
+    src: url(../fonts/cuprum.woff2) format("woff2"), url(../fonts/cuprum.woff) format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cuprum";
-    src: url(../fonts/cuprumbold.woff2) format("woff2"),
-    url(../fonts/cuprumbold.woff) format("woff");
+    src: url(../fonts/cuprumbold.woff2) format("woff2"), url(../fonts/cuprumbold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cuprum";
-    src: url(../fonts/cuprumitalic.woff2) format("woff2"),
-    url(../fonts/cuprumitalic.woff) format("woff");
+    src: url(../fonts/cuprumitalic.woff2) format("woff2"), url(../fonts/cuprumitalic.woff) format("woff");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Cuprum";
-    src: url(../fonts/cuprumbolditalic.woff2) format("woff2"),
-    url(../fonts/cuprumbolditalic.woff) format("woff");
+    src: url(../fonts/cuprumbolditalic.woff2) format("woff2"), url(../fonts/cuprumbolditalic.woff) format("woff");
     font-weight: 700;
-    font-style: italic;    
+    font-style: italic;
 }
 
 @font-face {
     font-family: "PT Sans";
-    src: url(../fonts/ptsans.woff2) format("woff2"),
-    url(../fonts/ptsans.woff) format("woff");
+    src: url(../fonts/ptsans.woff2) format("woff2"), url(../fonts/ptsans.woff) format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "PT Sans";
-    src: url(../fonts/ptsansbold.woff2) format("woff2"),
-    url(../fonts/ptsansbold.woff) format("woff");
+    src: url(../fonts/ptsansbold.woff2) format("woff2"), url(../fonts/ptsansbold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -64,7 +58,6 @@
     --basic-light-purple: #DC91D8;
     --basic-extra-green: #8ED78F;
     --basic-beige: #F7F3EC;
-
     --special-red: #BA2732;
     --special-green: #5FBB2D;
     --special-light-grey: #C5C5C5;
@@ -91,7 +84,6 @@
     font-weight: 400;
     color: var(--basic-white);
     background-color: var(--basic-white);
-    
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -113,9 +105,7 @@ img {
     height: 100%;
 }
 
-
 /* Main header */
-
 
 .header-menu-bar {
     background-color: var(--basic-extra-blue);
@@ -124,15 +114,19 @@ img {
 .header-menu {
     display: flex;
     width: 940px;
+    height: 42px;
     margin: 0 auto;
     padding: 0 10px;
     justify-content: space-between;
 }
 
-/* .main-header-logo {
+.main-header-logo {
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-.search-form {
+/*.search-form {
 }
 
 .menu-button-wrap {
@@ -197,18 +191,14 @@ img {
     grid-column: 3/4;
 }
 
-.services,
-.inner-page .title,
-.perforator-info {
+.services, .inner-page .title, .perforator-info {
     background-color: var(--special-light);
 }
 
 /* header menu */
 
-.header-menu,
-.search,
-.header-menu a {
-    color: var(--basic-white);    
+.header-menu, .search, .header-menu a {
+    color: var(--basic-white);
 }
 
 .search {
@@ -226,6 +216,8 @@ img {
 
 .order-button {
     background-color: var(--basic-green);
+    width: 150px;
+    height: 42px;
 }
 
 .order-button:hover {
@@ -244,7 +236,7 @@ img {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.menu-button-wrap a:focus {
+.menu-button:focus {
     background-color: var(--extradark-blue);
 }
 
@@ -255,8 +247,7 @@ img {
 
 /* user menu */
 
-.logo-text,
-.header-phone {
+.logo-text, .header-phone {
     color: var(--basic-red);
 }
 
@@ -301,24 +292,18 @@ img {
     color: var(--basic-blue);
 }
 
-
 /* site navigation */
 
-.site-navigation,
-.main-footer {
+.site-navigation, .main-footer {
     background-color: var(--basic-blue);
-       
 }
 
-.site-navigation,
-.promo-list,
-.footer-navigation-list,
-.footer-services-list {
-    list-style: none; 
+.site-navigation, .promo-list, .footer-navigation-list, .footer-services-list {
+    list-style: none;
 }
 
 .site-navigation a {
-    color: inherit;    
+    color: inherit;
 }
 
 .main-navigation a:hover {
@@ -340,10 +325,9 @@ img {
     height: 123px;
 }
 
-.promo-item:nth-of-type(1),
-.promo-item:nth-of-type(5) {
+.promo-item:nth-of-type(1), .promo-item:nth-of-type(5) {
     background-color: var(--basic-yellow);
-} 
+}
 
 .promo-item:nth-of-type(2) {
     background-color: var(--basic-skyblue);
@@ -376,14 +360,14 @@ img {
 .slider-title {
     font-size: 36px;
     line-height: 36px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 .perforators {
     background: #DEB887 url("../img/perforators.jpg") no-repeat;
     width: 620px;
     height: 266px;
-} 
+}
 
 .drills {
     background: #DEB887 url("../img/drills.jpg") no-repeat;
@@ -429,20 +413,15 @@ img {
     font-weight: normal;
 }
 
-.services-title,
-.company-title,
-.contacts-title,
-.perforator-info .title {
+.services-title, .company-title, .contacts-title, .perforator-info .title {
     color: var(--basic-black);
     font-weight: normal;
 }
-
 
 /* популярные товары */
 
 .popular-title-wrap {
     background-color: var(--special-light-beige);
-
     width: 940px;
     display: grid;
     margin: 0 auto;
@@ -457,27 +436,38 @@ img {
 }
 
 .popular-items-list {
-    display: flex;
+    list-style: none;
+    display: grid;
+    gap: 20px;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    align-items: baseline;
+    grid-template-columns: 220px 220px 220px;
 }
 
-.popular-manufacturers-list {
-    display: grid;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    gap: 20px;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 145px 145px;
-}
+.img-contain {
+    max-width: 220px;
+    height: 160px;
+    padding: 20px auto;
+    background-color: var(--basic-white);
+    margin: 0;
+  }
+
+  .img-contain img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    object-fit: cover;
+    align-self: center;
+  }
 
 .catalog-item {
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     text-align: center;
+    border: 1px solid #EAEAEA;
+    height: 318px;
+    width: 220px;
 }
 
 .catalog-item p {
@@ -502,6 +492,16 @@ img {
     text-transform: uppercase;
 }
 
+.popular-manufacturers-list {
+    display: grid;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    gap: 20px;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 145px 145px;
+}
+
 /* каталог */
 
 .inner-container {
@@ -509,13 +509,13 @@ img {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    gap: 20px;
     grid-template-rows: auto min-content min-content 1fr auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 240px 700px;
 }
 
 .breadcrumbs {
     grid-column: 1/-1;
-
     display: flex;
     gap: 20px;
 }
@@ -534,23 +534,21 @@ img {
 }
 
 .filters {
-    margin-top: 40px;
     grid-column: 1/2;
     grid-template-rows: 4/5;
 }
 
 .sort {
-    grid-column: 2/3;
+    grid-column: 2/-1;
     grid-row: 3/4;
     height: min-content;
+    margin-left: 10px;
 }
 
 .perforators-list {
     margin: 0 auto;
-    padding: 0 10px;
     grid-column: 2/-1;
     grid-row: 4/5;
-    align-items: baseline;
 }
 
 .pagination-list {
@@ -574,10 +572,8 @@ img {
 
 .catalog-list {
     display: grid;
-    grid-template-columns: 220px 220px 220px;
-}
-
-.catalog-list {
+    gap: 20px;
+    grid-template-columns: auto auto auto;
     list-style: none;
 }
 
@@ -591,9 +587,7 @@ img {
     border: 1px solid #E5E5E5;
 }
 
-.pagination-item-current a,
-.pagination-item-current a:hover,
-.pagination-item-current a:focus {
+.pagination-item-current a, .pagination-item-current a:hover, .pagination-item-current a:focus {
     border: none;
     color: var(--basic-white);
     background-color: var(--basic-red);
@@ -607,8 +601,7 @@ img {
     border: 1px solid #EE3643;
 }
 
-.catalog-buttons,
-.catalog-buttons button {
+.catalog-buttons, .catalog-buttons button {
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
@@ -644,15 +637,14 @@ img {
     padding-top: 60px;
 }
 
-.services-bar,
-.perforator-bar {
+.services-bar, .perforator-bar {
     background-color: var(--special-light);
 }
 
 .services-head {
     width: 940px;
     margin: 0 auto;
-    padding: 0 10px;    
+    padding: 0 10px;
 }
 
 .services-menu {
@@ -672,12 +664,9 @@ img {
     grid-template-columns: 240px;
     grid-template-rows: 61px 61px 61px;
     margin-right: 50px;
-
 }
 
-
-.slogan,
-.perforator-info-text {
+.slogan, .perforator-info-text {
     font-family: "PT Sans";
     font-size: 13px;
     color: var(--basic-black);
@@ -737,17 +726,12 @@ img {
 
 /* фильтр */
 
-.filter-header,
-.sort,
-.filter-button,
-.pagination-item a {
+.filter-header, .sort, .filter-button, .pagination-item a {
     text-transform: uppercase;
     font-size: 13px;
 }
 
-.filter-header,
-.price-range input,
-.sort {
+.filter-header, .price-range input, .sort {
     background-color: var(--basic-beige);
 }
 
@@ -768,14 +752,13 @@ img {
     border: none;
 }
 
-.filter-title {    
+.filter-title {
     font-size: 17px;
     line-height: 30px;
     font-weight: normal;
 }
 
-.manufacturers-filter,
-.power-filter {
+.manufacturers-filter, .power-filter {
     list-style: none;
     font-size: 15px;
     line-height: 19px;
@@ -783,8 +766,7 @@ img {
 
 /* футер */
 
-.footer-navigation,
-.footer-address {
+.footer-navigation, .footer-address {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
@@ -813,8 +795,6 @@ img {
     justify-content: space-between;
 }
 
-
-
 .main-footer-logo {
     display: flex;
     width: 220px;
@@ -828,19 +808,16 @@ img {
     gap: 20px;
 }
 
-
 .footer-navigation-list a {
     color: var(--special-light);
 }
 
-.footer-navigation-list a:hover,
-.footer-services-list a:hover,
-.footer-links a:hover {
+.footer-navigation-list a:hover, .footer-services-list a:hover, .footer-links a:hover {
     text-decoration: underline;
 }
 
 .footer-navigation-list a:focus {
-    color: rgba(241,245,247,0.5)
+    color: rgba(241, 245, 247, 0.5)
 }
 
 .footer-address a {
@@ -852,11 +829,11 @@ img {
 }
 
 .footer-services-list a:focus {
-    color: rgba(255,209,128, 0.5);
+    color: rgba(255, 209, 128, 0.5);
 }
 
 .footer-social ul {
-    list-style: none;    
+    list-style: none;
 }
 
 .footer-social a {
@@ -871,13 +848,14 @@ img {
     color: var(--basic-red);
 }
 
-.hidden {
+.hidden-visually {
     visibility: hidden;
 }
 
-.guarantee.hidden,
-.credit.hidden {
-    display: none;
+.hidden {
+    position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
-
-
